@@ -22,8 +22,11 @@ Combining these, the total number of seating orders is:
 $ 5! \times \binom{6}{5} \times 5! $
 
 Let's calculate this:
+
 $ 5! = 120 $
+
 $ \binom{6}{5} = 6 $
+
 $ 5! = 120 $
 
 So, the total number of seating orders is:
@@ -40,6 +43,7 @@ $ 5! \times (2!)^5 $
 
 Let's calculate this:
 $ 5! = 120 $
+
 $ (2!)^5 = 2^5 = 32 $
 
 So, the total number of seating orders is:
@@ -179,7 +183,7 @@ $ \binom{8}{3} \times \binom{6}{3} - \binom{7}{2} \times \binom{5}{2} $
 ### - a
 To distribute £20 million among 4 enterprises we need to find the solution to the equation:
 
-$ a*1 + b*2 + c*3 + d*4 = 20 $
+$ a\times1 + b\times2 + c\times3 + d\times4 = 20 $
 
 We need to find all the combination of a,b,c,d that satisfy the equation.
 
@@ -196,25 +200,6 @@ In the previous python code modify the variable ``` num_enterprise ``` at line 1
 Then we sum the two result:
 $ \text{Result 4 ent. + Result 3 ent} = 17956 + 5345 $
 
-If at least 3 must be backed (to keep the web intact), how many plans work?
-
-We need to consider two cases: funding all 4 enterprises and funding exactly 3 enterprises.
-
-1. Funding all 4 enterprises: This is the same as part (a):
-
-$ \binom{13}{3} $
-
-2. Funding exactly 3 enterprises: We need to find the number of ways to distribute £20 million among 3 enterprises with minimum investments of £1M, £2M, and £3M. Let $ z_1 = x_1 - 1 $, $ z_2 = x_2 - 2 $, and $ z_3 = x_3 - 3 $. Then the equation becomes:
-
-$ z_1 + z_2 + z_3 = 14 $
-
-where $ z_i \geq 0 $. The number of non-negative integer solutions is given by the stars and bars method:
-
-$ \binom{14 + 3 - 1}{3 - 1} = \binom{16}{2} $
-
-So, the total number of plans is:
-
-$ \binom{13}{3} + \binom{16}{2} $
 
 ## 8. The Coding Conundrum of Scotland Yard
 ### - a
@@ -268,7 +253,7 @@ To guess the password at the `k`-th attempt the previous  `k-1` attempts must re
 
 The probability that the first attempt failed is $ 1-\frac{1}{n}$, the second is $ 1 - \frac{1}{n-1}$ and so on. At the `k-1` attempt we have $ \frac{n - (k-1)}{n - (k-2)} $ and the probability of the `k`-th attempt to be successful is   $ \frac{1}{n - (k-1)}$
 The probability is:
-$ P(\text{k-th attempt succeeds}) =  \frac{1}{n} * \frac{n-2}{n-1} * \frac{n-3}{n-2} *\cdots *\frac{n-(k-1)}{n-(k-2)} * \frac{1}{n-(k-1)} $
+$ P(\text{k-th attempt succeeds}) =  \frac{1}{n} \times \frac{n-2}{n-1} \times \frac{n-3}{n-2} \times\cdots \times\frac{n-(k-1)}{n-(k-2)} \times \frac{1}{n-(k-1)} $
 
 ### -b
 The probability that the `k`-th attempt is the successful without discarding failures is:
