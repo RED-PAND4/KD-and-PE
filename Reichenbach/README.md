@@ -19,7 +19,7 @@ Then I combine the result in: 9! x 2! ≈ 700,000
 Since the novice constables must occupy exactly 5 of these 6 slots, we can choose 5 out of 6 slots in $\binom{6}{5}$ ways, which is 6. Then, the 5 novice constables can be arranged in $5!$ ways within those slots.
 
 Combining these, the total number of seating orders is:
-\[ 5! \times \binom{6}{5} \times 5! ]\
+$5! \times \binom{6}{5} \times 5!$
 
 Let's calculate this:
 
