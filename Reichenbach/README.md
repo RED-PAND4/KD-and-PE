@@ -115,7 +115,7 @@ $P(\text{flush}) = \frac{4 \times \binom{13}{5}}{\binom{52}{5}}$
 
 ### - b
 We have to choose 2 number/figure out of 13 for the pair aa and bb $\binom{13}{2}$, then we have to choose 2 suits for each pair so $\binom{4}{2} \times \binom{4}{2}$.
-Since c is a different number/figure we choose the fifth card from the remaining 11 $\binom{11}{1}$ and then choose a suit for it $\binom{4}{1}$ for maintaining the distinct propriety
+Since c is a different number/figure we choose the fifth card from the remaining 11 as $\binom{11}{1}$ and then choose a suit for it $\binom{4}{1}$ for maintaining the distinct propriety
 
 So all the possible combinations are:
 
@@ -126,7 +126,7 @@ The probability of getting two pairs is:
 $P(\text{two pairs}) = \frac{\binom{13}{2} \times \binom{4}{2} \times \binom{4}{2} \times \binom{11}{1} \times \binom{4}{1}}{\binom{52}{5}}$
 
 ### - c
-Like before we choose a number/figure out of 13 $\binom{13}{1}$, choose 4 suits out of 4 $\binom{4}{4}$, choose the fifth card from the remaining number/figure $\binom{12}{1}$ and then choose a suit for it $\binom{4}{1}$
+Like before we choose a number/figure out of 13 as $\binom{13}{1}$, choose 4 suits out of 4 $\binom{4}{4}$, choose the fifth card from the remaining number/figure $\binom{12}{1}$ and then choose a suit for it $\binom{4}{1}$
 
 So all the possible combinations are:
 
@@ -153,7 +153,7 @@ We choose $r$ bits from $M + N$ bits doing $\binom{M+N}{r}$.
 
 Combining these, the probability that the first $r$ bits contain exactly $k$ 1's is:
 
-$P(contain k 1's) = \frac{\binom{N}{k} \binom{M}{r-k}}{\binom{M+N}{r}}$
+$P(\text{contain k 1's}) = \frac{\binom{N}{k} \binom{M}{r-k}}{\binom{M+N}{r}}$
 
 
 ## 6. The Menagerie of Moriarty
@@ -191,7 +191,7 @@ $\binom{8}{3} \times \binom{6}{3} - \binom{7}{2} \times \binom{5}{2}$
 ### - a
 To distribute £20 million among 4 enterprises we need to find the solution to the equation:
 
-$ a \times 1 + b \times 2 + c \times 3 + d \times 4 = 20$
+$a \times 1 + b \times 2 + c \times 3 + d \times 4 = 20$
 
 We need to find all the combination of a,b,c,d that satisfy the equation.
 
